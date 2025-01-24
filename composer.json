@@ -22,7 +22,8 @@
     "require": {
         "php": "^8.0",
         "illuminate/support": "*",
-        "guzzlehttp/guzzle": "^7.9"
+        "guzzlehttp/guzzle": "^7.9",
+        "truncgil/finance": "1.0"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0|^7.0|^8.0",
@@ -38,6 +39,6 @@
             }
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
