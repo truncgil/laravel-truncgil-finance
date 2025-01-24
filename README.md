@@ -1,5 +1,8 @@
 # Truncgil Finance Laravel Package
 
+![Light Logo](https://finance.truncgil.com/img/logo-light.svg)
+![Dark Logo](http://finance.truncgil.com/img/logo.svg)
+
 This package allows you to easily use the Truncgil Finance API in your Laravel projects.
 
 ## Features
