@@ -28,7 +28,6 @@ class Finance
                 if (!$response->successful()) {
                     throw new Exception("API isteği başarısız: " . $response->status());
                 }
-
                 return $response->json()['Rates'] ?? [];
             });
         } catch (Exception $e) {
