@@ -2,17 +2,20 @@
 
 namespace Tests;
 
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Illuminate\Support\Facades\Artisan;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Orchestra\Testbench\TestCase as BaseTestCase;
+use Truncgil\Finance\FinanceServiceProvider;
 
 abstract class TestCase extends BaseTestCase
 {
-    use CreatesApplication;
-    use RefreshDatabase;
-
-    protected function setUp(): void
+    protected function getPackageProviders($app)
     {
-        parent::setUp();
+        return [
+            FinanceServiceProvider::class,
+        ];
+    }
+
+    protected function getEnvironmentSetUp($app)
+    {
+        // Burada test için environment ayarlarını yapabilirsin
     }
 }
