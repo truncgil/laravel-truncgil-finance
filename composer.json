@@ -39,6 +39,5 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true,
-    "version": "v5.0.0"
+    "prefer-stable": true
 }
